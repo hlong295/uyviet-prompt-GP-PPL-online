@@ -1,1 +1,49 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <title>UyViet — Prompt V4 Pro (Online)</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <header>
+    <div class="brand"><img src="/assets/UyViet_logo.png" alt="UyViet"> <span>UY VIỆT — Prompt V4 Pro</span></div>
+  </header>
+
+  <main>
+    <section class="left">
+      <h2>1) Upload file gói thầu</h2>
+      <input id="fileInput" type="file" accept=".pdf,.docx,.png,.jpg,.jpeg">
+      <button id="btnExtract">Extract text</button>
+      <div id="fileInfo"></div>
+      <h3>Preview trích xuất</h3>
+      <pre id="preview" class="preview">Chưa có nội dung.</pre>
+    </section>
+
+    <section class="right">
+      <h2>2) Thông tin dự án & Sinh nội dung</h2>
+      <input id="project" placeholder="Tên dự án">
+      <input id="client" placeholder="Chủ đầu tư">
+      <input id="location" placeholder="Địa điểm">
+      <input id="scale" placeholder="Quy mô">
+      <select id="promptSelect">
+        <option value="all">Sinh toàn bộ 7 phần</option>
+        <option value="1">Prompt 1 — Quy định</option>
+        <option value="2">Prompt 2 — Hiểu mục đích</option>
+        <option value="3">Prompt 3 — Phương pháp luận</option>
+        <option value="4">Prompt 4 — Sáng kiến</option>
+        <option value="5">Prompt 5 — Kế hoạch</option>
+        <option value="6">Prompt 6 — Nhân sự</option>
+        <option value="7">Prompt 7 — Tổng hợp</option>
+      </select>
+      <button id="btnGenerate">Sinh nội dung & Tải Word</button>
+      <button id="btnDownloadExcel">Tải Excel Tools</button>
+    </section>
+
+    <div style="clear:both"></div>
+  </main>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
 
